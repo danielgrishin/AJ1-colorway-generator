@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DanG ID</title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='mystyle.css') }}">
+    <style>
+    h1 {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+    margin: 20px 0;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+    }
+    h4 {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 10%;
+    }
+    body {
+    text-align: center;
+    }
+    #tri {
+    border-bottom: 150px solid {{color2}};
+    }
+    #midsole {
+    background: {{color5}};
+    }
+    #outsole {
+    background: {{color3}};
+    }
+    #ankle {
+    background: {{color2}};
+    }
+    #toebox {
+    border-bottom: 45px solid {{color1}};
+    }
+    #midfoot {
+    background: {{color4}};
+    }
+    #himidfoottri {
+    border-bottom: 39px solid {{color4}};
+    }
+    #himidfootrec{
+    background: {{color4}};
+    }
+    #cuff{
+    border-top: 25px solid {{color1}};
+    }
+    #understrap{
+    border-bottom: 20px solid {{color1}};
+    }
+    #heeltri {
+    border-bottom: 55px solid {{color2}};
+    }
+    .laces{
+    background:{{color3}};
+    }
+
+</style>
+</head>
+<body>
+<h1> DanG ID</h1>
+<h4>RELOAD to generate new variation</h4>
+<h4>BACK to choose different colors</h4>
+<div id="shoe">
+    <div id="tri"></div>
+    <div id="midsole"></div>
+    <div id="outsole"></div>
+    <div id="ankle"></div>
+    <div id="toebox"></div>
+    <div id="midfoot"></div>
+    <div id="himidfoottri"></div>
+    <div id="himidfootrec"></div>
+    <div id="cuff"></div>
+    <div id="understrap"></div>
+    <div id="heeltri"></div>
+    <div id="heelrec"></div>
+    <img src="{{url_for('static',filename = 'nikelogo.png')}}" >
+    <div class="laces" id="lace1"></div>
+    <div class="laces" id="lace2"></div>
+    <div class="laces" id="lace3"></div>
+    <div class="laces" id="lace4"></div>
+    <div class="laces" id="lace5"></div>
+</div>
+</body>
+</html>
