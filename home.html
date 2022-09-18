@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <title>DanG ID</title>
+    <style>
+    h1 { color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+    margin: 20px 0;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+    }
+    h4 {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: normal;
+    }
+    body {
+    text-align: center;
+    }
+    input[type=submit] {
+    width: 25%;
+    padding: 12px 18px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    }
+    input[type=color] {
+    width: 7.5%;
+    padding: 0;
+    margin: 10px 0;
+    }
+    </style>
+</head>
+<body>
+<h1> DanG ID</h1>
+<h4><label>Choose 5 colors for the shoe:</label></h4>
+<form action="{{url_for('shoe')}}" method="post">
+    <input type="color" name="color1" value="#ff0000">
+    <input type="color" name="color2" value="#bd0202">
+    <input type="color" name="color3" value="#850101">
+    <input type="color" name="color4" value="#450101">
+    <input type="color" name="color5" value="#000000">
+    <div><input type="submit" value="Submit"></div>
+</form>
+</body>
+
+</html>
